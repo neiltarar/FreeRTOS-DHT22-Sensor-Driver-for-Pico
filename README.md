@@ -2,11 +2,21 @@
 
 This repository contains a driver for the DHT22 temperature and humidity sensor for use with the Raspberry Pi Pico. The driver communicates with the DHT22 sensor over a single data line using specific timing to read the temperature and humidity values.
 
-## 📌 Single-bus Communication Diagram
+## 🖼️ Single-bus Communication Diagram
 
 ![Single-bus Communication Diagram](Datasheets/SingleBusCommunicationDiagram.png)
 
 The diagram above illustrates the signal timing for single-bus communication between the host (Raspberry Pi Pico) and the DHT22 sensor.
+
+<details>
+<summary> 📌 AM2302 Pin Diagram </summary>
+
+<img width="50%" alt="AM2302 Pin Assignment Table" src="Datasheets/DHT22_pin_diagram_one.png" />
+<img width="30%" alt="AM2302 Pin Assignment Drawing" src="Datasheets/DHT22_pin_diagram_two.png" />
+
+These images show the pin assignments for the AM2302 sensor. Make sure to connect them correctly to your Raspberry Pi Pico.
+
+</details>
 
 ## 🛠️ Usage
 
