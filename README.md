@@ -1,1 +1,1 @@
-# FreeRTOS-DHT22-Sensor-Driver-for-Pico
+# DHT22 Sensor Driver for Pico in C
