@@ -2,9 +2,9 @@
 
 This repository contains a driver for the DHT22 temperature and humidity sensor for use with the Raspberry Pi Pico. The driver communicates with the DHT22 sensor over a single data line using specific timing to read the temperature and humidity values.
 
-## 📌 Wiring Diagram
+## 📌 Single-bus Communication Diagram
 
-![single-bus Communication Diagram](Datasheets/SingleBusCommunicationDiagram.png)
+![Single-bus Communication Diagram](Datasheets/SingleBusCommunicationDiagram.png)
 
 The diagram above illustrates the signal timing for single-bus communication between the host (Raspberry Pi Pico) and the DHT22 sensor.
 
