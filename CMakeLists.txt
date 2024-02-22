@@ -1,17 +1,25 @@
-cmake_minimum_required(VERSION 3.12)
+cmake_minimum_required(VERSION 3.15)
+
+set(APP_NAME "dht22-pico")
 
 include(pico_sdk_import.cmake)
+project(${APP_NAME}
+        LANGUAGES C CXX ASM
+)
 
-project(dht22-pico)
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 
 pico_sdk_init()
 
-add_executable(dht22-pico
+add_executable(${APP_NAME}
         DHT22-master/DHT22.c
         DHT22-master/main.c
         )
 
-pico_enable_stdio_usb(dht22-pico 1)
+# Enable/disable STDIO via USB and UART
+pico_enable_stdio_usb(${APP_NAME} 1)
+pico_enable_stdio_uart(${APP_NAME} 0)
 
 target_link_libraries(dht22-pico pico_stdlib)
 
